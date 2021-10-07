@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Cart";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's Cart</p>
+<form name="ShoppingList">
+    <fieldset>
+        <legend>Cart</legend>
+        <label>Name: <input type="text" name="name"></label>
+        <label>Amount: <input type="text" name="data"></label>
+
+        <input type="button" value="Refresh Cart" onclick="">
+        <input type="button" value="Delete Item" onclick="">
+    </fieldset>
+    <div id="Cart Item">
+        <h2>Cart List</h2>
+        <table id="list"></table>
+        @*
+            Clear all from list implement here
+        *@
+        <label>
+            <input type="button" value="Clear" onclick="ClearAll()">
+            * Delete all items
+        </label>
+    </div>
+</form>
+@*
+    Cart was not implemented
+*@
